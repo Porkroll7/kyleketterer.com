@@ -90,14 +90,30 @@
           <a href="https://github.com/Porkroll7" target="_blank">GitHub</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/kyle-ketterer" target="_blank"
-            >LinkedIn</a
+          <!-- LinkedIn Click -->
+          <a
+            href="https://www.linkedin.com/in/kyle-ketterer"
+            target="_blank"
+            onclick="gtag('event', 'click_linkedin', {
+     event_category: 'engagement',
+     event_label: 'linkedin_profile'
+   });"
           >
+            LinkedIn
+          </a>
         </li>
         <li>
-          <a href="/assets/Kyle_Ketterer_Resume.pdf" target="_blank"
-            >Download Resume</a
+          <!-- Resume Click -->
+          <a
+            href="/assets/Kyle_Ketterer_Resume.pdf"
+            target="_blank"
+            onclick="gtag('event', 'click_resume', {
+     event_category: 'engagement',
+     event_label: 'resume.pdf'
+   });"
           >
+            Download Resume
+          </a>
         </li>
       </ul>
     </section>

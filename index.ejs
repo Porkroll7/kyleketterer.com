@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kyle Ketterer | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/assets/k_logo.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Kyle Ketterer</h1>
+      <% if (username) { %>
+      <p>Welcome, <%= username %>!</p>
+      <% } %>
+      <div id="auth-buttons" style="margin-top: 1rem">
+        <% if (username) { %>
+        <a href="/dashboard" class="button">Dashboard</a>
+        <a href="/logout" class="button">Logout</a>
+        <% } else { %>
+        <a href="/login.html" class="button" style="margin-right: 1rem"
+          >Login</a
+        >
+        <a href="/register.html" class="button">Sign Up</a>
+
+        <% } %>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a recent Penn State CS graduate with experience in full stack
+        development, machine learning, and Cybersecurity. I enjoy building tools
+        that solve real-world problems.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Accomplishments</h2>
+      <ul>
+        <li>
+          <strong
+            ><a
+              href="https://nittanyai.psu.edu/alliance-programs/nittany-ai-challenge/results/"
+              target="_blank"
+              >Nittany AI Challenge Winner</a
+            >:</strong
+          >
+          BioWatch, a tool for invasive species detection.
+        </li>
+        <li>
+          <strong
+            ><a
+              href="https://www.trb.org/ACRP/designwinners2024.aspx"
+              target="_blank"
+              >ACRP Challenge Winner</a
+            >:</strong
+          >
+          Reduced airplane taxiing time with AI predictions.
+        </li>
+        <li>
+          <strong
+            ><a
+              href="https://csrai.psu.edu/initiatives/cheat-a-thon"
+              target="_blank"
+              >Cheat-a-Thon Winner</a
+            >:</strong
+          >
+          Evaluated generative AI answering capabilities
+        </li>
+        <li>
+          <strong>Penn State Division 1 Men's Soccer:</strong> Walked on to the
+          team in 2023.
+        </li>
+        <li>
+          <strong>FTC Robotics - Team Two Eyed Illuminati:</strong>
+          Reached the Pennsylvania State Championship for designing and
+          programming autonomous & driver-controlled robots.
+        </li>
+      </ul>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <!-- LinkedIn Click -->
+          <a
+            href="https://www.linkedin.com/in/kyle-ketterer"
+            target="_blank"
+            onclick="gtag('event', 'click_linkedin', {
+     event_category: 'engagement',
+     event_label: 'linkedin_profile'
+   });"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <!-- Resume Click -->
+          <a
+            href="/assets/Kyle_Ketterer_Resume.pdf"
+            target="_blank"
+            onclick="gtag('event', 'click_resume', {
+     event_category: 'engagement',
+     event_label: 'resume.pdf'
+   });"
+          >
+            Resume
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Porkroll7" target="_blank">GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 • <a href="/privacy.html">Privacy Policy</a></p>
+    </footer>
+  </body>
+</html>
